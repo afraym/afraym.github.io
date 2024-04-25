@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afraim Gerges - Web Developer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* Prevent body scrolling */
+      background: linear-gradient(to right, #f0f8ff 0%, #d6e0f0 100%); /* Subtle gradient */
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 800px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+      text-align: center;
+      animation: shine 2s infinite alternate; /* Add subtle animation */
+    }
+
+    @keyframes shine {
+      from {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      to {
+        background-color: rgba(255, 255, 255, 1);
+      }
+    }
+
+    .intro {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333; /* Darker text color */
+    }
+    .about,
+    .skills,
+    .contact {
+      margin-bottom: 30px;
+    }
+    .about h2 {
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #007bff; /* Blue accent color */
+    }
+    .about p {
+      line-height: 1.6;
+      color: #666; /* Lighter text color */
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skill {
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #fff; /* Opaque background for skills */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      position: relative; /* For hover effects */
+    }
+    .skill:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      /* Add hover effect - inner shadow */
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.1); /* Subtle black overlay */
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+      }
+    }
+    .skill:hover::after {
+      opacity: 0.3; /* Show overlay on hover */
+    }
+    .skill h3 {
+      font-size: 1.2em;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .contact a {
+      color: #007bff; /* Blue accent color for link */
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="intro">Afraim Gerges - Web Developer</h1>
+    <p class="intro">I craft powerful websites that work for you, and love the thrill of the hunt when they don't.</p>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>I'm a seasoned PHP and Laravel developer with 8 years of experience. I don't just build websites, I build websites that thrive. I'm an expert in website optimization, so your site will be lightning fast and rank high in search results. Need a WordPress wiz? I've got that covered too! And to make it all tick, I'm fluent in MySQL, ensuring your data is stored securely and efficiently. When things get buggy, don't worry - I love debugging the trickiest issues. I'm also comfortable wrangling Linux servers, so your website will have a strong foundation to grow on. Let's work together to bring your web vision to life, and make sure it runs like a dream.</p>
+    </div>
+    <div class="skills">
+      <div class="skill">
+        <h3>Code with a Kick</h3>
+        <p>Clean, efficient PHP & Laravel for scalable websites</p>
+      </div>
+      <div class="skill">
+        <h3>WordPress Whisperer</h3>
+        <p>Unlocking full potential - themes, plugins & more</p>
+      </div>
+      <div class="skill">
+        <h3>MySQL Maestro</h3>
+        <p>Design & manage databases for smooth website operation</p>
+      </div>
+      <div class="skill">
+        <h3>Debugging Detective</h3>
+        <p>Relishing the challenge to untangle complex website issues</p>
+      </div>
+      <div class="skill">
+        <h3>Linux Wrangler</h3>
+        <p>Configuring & maintaining servers for optimal performance</p>
+      </div>
+    </div>
+    <div
