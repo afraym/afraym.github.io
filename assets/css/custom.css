@@ -44,6 +44,24 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
+@keyframes fadeInUp {
+    from {
+    opacity: 0;
+    transform: translateY(30px);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+#about > div > div > div.col-lg-5.col-md-12.col-12 > div > img {
+   
+    transform: scale(1.1);
+}
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
 /* Category Headers */
 .skill-category-header {
     text-align: center;
