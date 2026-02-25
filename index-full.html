@@ -23,6 +23,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="/assets/css/custom.min.css">
 
 
   <!-- MAIN STYLE -->
@@ -59,9 +60,9 @@ https://www.tooplate.com/view/2115-marvel
           <li class="nav-item">
             <a href="#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
           </li>
-          <!-- <li class="nav-item">
+          <li class="nav-item">
                         <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li> -->
+                    </li>
 
           <li class="nav-item">
             <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
@@ -103,20 +104,28 @@ https://www.tooplate.com/view/2115-marvel
               </div>
             </h1>
 
-            <p>I craft powerful websites that work for you, and love the thrill of the hunt when they don't.
+            <p>I craft powerful websites that don't just look great—they perform exceptionally. With nearly 8 years of PHP and Laravel expertise, I build scalable solutions that solve real problems.</p>
 
-              I'm a seasoned PHP and Laravel developer with almost 8 years of experience . I don't just build websites,
-              I build websites that thrive.</p>
-            <p>I'm an expert in website optimization, so your site will be lightning fast and rank high in search
-              results. Need a WordPress wiz? I've got that covered too! </p>
-            <p>And to make it all tick, I'm fluent in MySQL, ensuring your data is stored securely and efficiently. </p>
-            <p> When things get buggy, don't worry - I love debugging the trickiest issues. I'm also comfortable
-              wrangling Linux servers, so your website will have a strong foundation to grow on. Let's work together to
-              bring your web vision to life, and make sure it runs like a dream.</p>
+            <div class="highlight-features mt-3 mb-3">
+              <div class="feature-item">
+                <i class="uil uil-bolt"></i>
+                <span><strong>Lightning-Fast Performance</strong> — Expert optimization ensures your site ranks high and loads instantly</span>
+              </div>
+              <div class="feature-item">
+                <i class="uil uil-shield-check"></i>
+                <span><strong>Secure & Reliable</strong> — MySQL mastery and Linux server administration keep your data safe</span>
+              </div>
+              <div class="feature-item">
+                <i class="uil uil-bug"></i>
+                <span><strong>Problem Solver</strong> — Debugging complex issues is where I thrive</span>
+              </div>
+              <div class="feature-item">
+                <i class="uil uil-wordpress"></i>
+                <span><strong>Full-Stack Capability</strong> — From WordPress to custom Laravel applications</span>
+              </div>
+            </div>
 
             <div class="custom-btn-group mt-4">
-              <!-- <a href="assets/pdf/Afraym Gerges - Web Developer CV.pdf" class="btn mr-lg-2 custom-btn"><i
-                  class='uil uil-file-alt'></i> Download Resume</a> -->
               <a href="#contact" class="btn custom-btn custom-btn-bg custom-btn-link">Get in touch</a>
             </div>
           </div>
@@ -334,242 +343,6 @@ https://www.tooplate.com/view/2115-marvel
     </div>
   </section>
 
-  <style>
-    /* Skills section dark mode support */
-    .color-mode-dark .skills {
-      background: var(--dark-color) !important;
-    }
-    
-    .color-mode-dark .skills h2,
-    .color-mode-dark .skills h3,
-    .color-mode-dark .skills h4,
-    .color-mode-dark .skills h5,
-    .color-mode-dark .skills span:not(.text-warning):not(.text-muted) {
-      color: var(--white-color) !important;
-    }
-
-    /* Skills Grid Layout */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    /* Skill Category Cards */
-    .skill-category-card {
-      background: #fff;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .skill-category-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    }
-
-    .color-mode-dark .skill-category-card {
-      background: var(--menu-bg);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-
-    .color-mode-dark .skill-category-card:hover {
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    }
-
-    /* Category Headers */
-    .skill-category-header {
-      text-align: center;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1rem;
-      border-bottom: 2px solid #f8f9fa;
-    }
-
-    .color-mode-dark .skill-category-header {
-      border-bottom-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .skill-category-header i {
-      font-size: 2.5rem;
-      display: block;
-    }
-
-    .skill-category-header h4 {
-      margin: 0;
-      font-weight: 600;
-    }
-
-    /* Individual Skills */
-    .skill-item {
-      margin-bottom: 1.5rem;
-    }
-
-    .skill-info {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0.5rem;
-    }
-
-    .skill-name {
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .skill-level {
-      font-size: 0.8rem;
-      font-weight: 600;
-      padding: 0.25rem 0.75rem;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .skill-level.expert {
-      background: rgba(255, 193, 7, 0.15);
-      color: #ff9800;
-    }
-
-    .skill-level.advanced {
-      background: rgba(40, 167, 69, 0.15);
-      color: #28a745;
-    }
-
-    .skill-level.proficient {
-      background: rgba(23, 162, 184, 0.15);
-      color: #17a2b8;
-    }
-
-    /* Skill Progress Bars */
-    .skill-bar {
-      width: 100%;
-      height: 8px;
-      background: #e9ecef;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .color-mode-dark .skill-bar {
-      background: rgba(255, 255, 255, 0.1);
-    }
-
-    .skill-progress {
-      height: 100%;
-      background: linear-gradient(45deg, #ffc107, #ff9800);
-      border-radius: 10px;
-      width: 0;
-      transition: width 2s ease-in-out;
-      position: relative;
-    }
-
-    .skill-progress::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, transparent 25%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 50%, transparent 50%, transparent 75%, rgba(255, 255, 255, 0.2) 75%);
-      background-size: 20px 20px;
-      animation: move 2s linear infinite;
-    }
-
-    @keyframes move {
-      0% { background-position: 0 0; }
-      100% { background-position: 20px 20px; }
-    }
-
-    /* Competencies Grid */
-    .competencies-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .competency-card {
-      background: #fff;
-      padding: 2rem 1.5rem;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .competency-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-    }
-
-    .color-mode-dark .competency-card {
-      background: var(--menu-bg);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .color-mode-dark .competency-card:hover {
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    }
-
-    .competency-icon {
-      width: 70px;
-      height: 70px;
-      background: rgba(255, 193, 7, 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 1rem;
-      transition: transform 0.3s ease;
-    }
-
-    .competency-card:hover .competency-icon {
-      transform: scale(1.1);
-    }
-
-    .competency-icon i {
-      font-size: 2rem;
-    }
-
-    .competency-card h5 {
-      margin-bottom: 0.75rem;
-      font-weight: 600;
-    }
-
-    .competency-card p {
-      margin: 0;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .skills-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-      }
-
-      .competencies-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem;
-      }
-
-      .skill-category-card {
-        padding: 1.5rem;
-      }
-
-      .competency-card {
-        padding: 1.5rem 1rem;
-      }
-    }
-  </style>
-
   <script>
     // Animate skill bars when they come into view
     function animateSkillBars() {
@@ -594,52 +367,56 @@ https://www.tooplate.com/view/2115-marvel
   </script>
 
   <!-- PROJECTS -->
-  <!-- <section class="project py-5" id="project">
+  <section class="project py-5" id="project">
         <div class="container">
                 
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
 
                       <div class="col-lg-8 mx-auto">
-                        <h2>Things I have designed for digital media agencies</h2>
+                        <h2>Showcasing My Best Work</h2>
                       </div>
 
                       <div class="owl-carousel owl-theme">
                         <div class="item">
                           <div class="project-info">
-                            <img src="assets/images/project/project-image01.png" class="img-fluid" alt="project image">
+                            <div class="project-item">
+                              <div class="project-image-wrapper">
+                                <a href="https://auh.afraym.com/" target="_blank" rel="noopener noreferrer">
+                                  <img src="assets/images/project/auh.png" class="img-fluid" alt="Aswan University Hospital Website">
+                                  <div class="project-overlay">
+                                    <i class="uil uil-external-link-alt"></i>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
                           </div>
                         </div>
 
                         <div class="item">
                           <div class="project-info">
-                            <img src="assets/images/project/project-image02.png" class="img-fluid" alt="project image">
+                            <div class="project-item">
+                              <div class="project-image-wrapper">
+                                <a href="https://hms.afraym.com/" target="_blank" rel="noopener noreferrer">
+                                  <img src="assets/images/project/hms.png" class="img-fluid" alt="Hospital Management System Website for Aswan University Hospital">
+                                  <div class="project-overlay">
+                                    <i class="uil uil-external-link-alt"></i>
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+
                           </div>
                         </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
                       </div>
 
                   </div>
                 </div>
         </div>
-    </section> -->
+    </section>
 
   <!-- FEATURES -->
   <section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
@@ -731,23 +508,7 @@ https://www.tooplate.com/view/2115-marvel
               </div>
             </div>
 
-            <!-- <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image03.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
 
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image04.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div>
-
-                        <div class="item">
-                          <div class="project-info">
-                            <img src="assets/images/project/project-image05.png" class="img-fluid" alt="project image">
-                          </div>
-                        </div> -->
           </div>
 
         </div>
@@ -826,13 +587,13 @@ https://www.tooplate.com/view/2115-marvel
         <div class="col-lg-12 col-12">
           <p class="copyright-text text-center">Copyright &copy; 2019 Afraym Nageh . All rights reserved</p>
           <p class="copyright-text text-center">Designed by <a rel="nofollow"
-              href="https://www.facebook.com/tooplate">Tooplate</a></p>
+              href="https://www.facebook.com/tooplate" target="_blank">Tooplate</a></p>
         </div>
 
       </div>
     </div>
   </footer>
-<script src="https://cdn.jsdelivr.net/gh/afraym/webrr/webrr.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/afraym/webrr/webrr.min.js"></script>
   <script>
     // Initialize rrweb recording
     let events = [];
@@ -857,7 +618,7 @@ https://www.tooplate.com/view/2115-marvel
             });
         }
     }, 5000); // Send every 5 seconds
-</script>
+</script> -->
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WG8E0KZR0F"></script>
   <script>
