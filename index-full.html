@@ -49,52 +49,188 @@ https://www.tooplate.com/view/2115-marvel
 </head>
 
 <body>
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-sm navbar-light">
+  <!-- MODERN NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top py-3" style="z-index:1040;">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><i class='uil uil-user'></i> Afraym</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
-        <span class="navbar-toggler-icon"></span>
+      <a class="navbar-brand font-weight-bold d-flex align-items-center" href="index.html" style="font-size:1.5rem; color:#474559;">
+        <i class="uil uil-user mr-2" style="font-size:2rem;color:#ffc200;"></i> Afraym
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="uil uil-bars" style="font-size:1.8rem;color:#474559;"></i></span>
       </button>
-
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#skills" class="nav-link"><span data-hover="Skills">Skills</span></a>
-          </li>
-          <li class="nav-item">
-                        <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
-                    </li>
-
-          <li class="nav-item">
-            <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#certificates" class="nav-link"><span data-hover="Certificates">Certificates</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
-          </li>
+          <li class="nav-item"><a href="#about" class="nav-link px-3">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link px-3">Skills</a></li>
+          <li class="nav-item"><a href="#project" class="nav-link px-3">Projects</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link px-3">Resume</a></li>
+          <li class="nav-item"><a href="#certificates" class="nav-link px-3">Certificates</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-3">Contact</a></li>
         </ul>
-
-        <ul class="navbar-nav ml-lg-auto">
-          <div class="ml-lg-4">
-            <div class="color-mode d-lg-flex justify-content-center align-items-center">
-              <i class="color-mode-icon"></i>
-              Color mode
-            </div>
-          </div>
-        </ul>
+        <div class="ml-lg-4 d-flex align-items-center justify-content-center mt-3 mt-lg-0">
+          <button class="btn btn-navbar-gold d-flex align-items-center" id="colorModeToggle" type="button" title="Toggle color mode">
+            <i class="uil uil-moon color-mode-icon" style="font-size:1.3rem;"></i>
+            <span class="ml-2 d-none d-md-inline font-weight-bold">Color mode</span>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
+  <style>
+            /* Improve text readability in dark mode */
+            body.bg-dark, .color-mode-dark {
+              color: #f7f7f7;
+            }
+            body.bg-dark h1, .color-mode-dark h1,
+            body.bg-dark h2, .color-mode-dark h2,
+            body.bg-dark h3, .color-mode-dark h3,
+            body.bg-dark h4, .color-mode-dark h4,
+            body.bg-dark h5, .color-mode-dark h5,
+            body.bg-dark h6, .color-mode-dark h6 {
+              color: #fff !important;
+            }
+            body.bg-dark p, .color-mode-dark p,
+            body.bg-dark .text-dark, .color-mode-dark .text-dark,
+            body.bg-dark .footer-link, .color-mode-dark .footer-link {
+              color: #e0e0e0 !important;
+            }
+            body.bg-dark .navbar-nav .nav-link, .color-mode-dark .navbar-nav .nav-link {
+              color: #f7f7f7 !important;
+            }
+            body.bg-dark .navbar-nav .nav-link:hover, .color-mode-dark .navbar-nav .nav-link:hover {
+              color: #ffc200 !important;
+            }
+            body.bg-dark .custom-navbar, .color-mode-dark .custom-navbar {
+              background: #23232b !important;
+              border-bottom: 2px solid #474559 !important;
+            }
+            body.bg-dark .footer, .color-mode-dark .footer {
+              background: #181820 !important;
+              color: #e0e0e0 !important;
+            }
+            body.bg-dark .footer-link, .color-mode-dark .footer-link {
+              color: #ffc200 !important;
+            }
+            body.bg-dark .footer-link:hover, .color-mode-dark .footer-link:hover {
+              color: #fff !important;
+            }
+            body.bg-dark .contact-info, .color-mode-dark .contact-info {
+              background: #23232b !important;
+              color: #e0e0e0 !important;
+            }
+            body.bg-dark .contact-info a, .color-mode-dark .contact-info a {
+              color: #ffc200 !important;
+            }
+            body.bg-dark .contact-info a:hover, .color-mode-dark .contact-info a:hover {
+              color: #fff !important;
+            }
+            body.bg-dark .form-control, .color-mode-dark .form-control {
+              background: #23232b !important;
+              color: #fff !important;
+              border-color: #474559;
+            }
+            body.bg-dark .form-control::placeholder, .color-mode-dark .form-control::placeholder {
+              color: #bdbdbd !important;
+              opacity: 1;
+            }
+            body.bg-dark .custom-btn, .color-mode-dark .custom-btn {
+              background: #474559;
+              color: #ffc200;
+            }
+            body.bg-dark .custom-btn:hover, .color-mode-dark .custom-btn:hover {
+              background: #ffc200;
+              color: #474559;
+            }
+        /* No Headroom.js classes needed for always-fixed header */
+    .custom-navbar {
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 4px 24px rgba(71,69,89,0.08);
+      border-bottom: 2px solid #ffc200;
+    }
+    .navbar-brand {
+      letter-spacing: 1px;
+    }
+    .navbar-nav .nav-link {
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #474559 !important;
+      position: relative;
+      transition: color 0.2s, background 0.2s;
+      border-radius: 0.25rem;
+      padding-bottom: 0.2rem;
+    }
+    .navbar-nav .nav-link:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg,#ffc200,#ff9800);
+      border-radius: 2px;
+      transition: width 0.3s;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    .navbar-nav .nav-link:hover:after, .navbar-nav .nav-link:focus:after {
+      width: 100%;
+    }
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+      color: #ffc200 !important;
+      background: rgba(255,193,7,0.07);
+    }
+    .btn-navbar-gold {
+      background: linear-gradient(90deg,#ffc200,#ff9800);
+      color: #fff;
+      border: none;
+      font-weight: 600;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+      box-shadow: 0 2px 8px rgba(255,193,7,0.08);
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-navbar-gold:hover, .btn-navbar-gold:focus {
+      background: #474559;
+      color: #ffc200;
+    }
+    .navbar {
+      transition: box-shadow 0.2s;
+    }
+    @media (max-width: 991.98px) {
+      .navbar.fixed-top { position: static; }
+    }
+    body.bg-dark .custom-navbar, .color-mode-dark .custom-navbar {
+      background: #23232b !important;
+      border-bottom: 2px solid #474559 !important;
+    }
+    body.bg-dark .navbar-nav .nav-link, .color-mode-dark .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    body.bg-dark .navbar-nav .nav-link:hover, .color-mode-dark .navbar-nav .nav-link:hover {
+      color: #ffc200 !important;
+    }
+    body.bg-dark .btn-navbar-gold, .color-mode-dark .btn-navbar-gold {
+      background: #474559;
+      color: #ffc200;
+      border: none;
+    }
+    body.bg-dark .btn-navbar-gold:hover, .color-mode-dark .btn-navbar-gold:hover {
+      background: #ffc200;
+      color: #474559;
+    }
+  </style>
+  <script>
+    // Color mode toggle (simple demo)
+    document.addEventListener('DOMContentLoaded', function() {
+      var btn = document.getElementById('colorModeToggle');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          document.body.classList.toggle('bg-dark');
+          document.body.classList.toggle('text-white');
+          document.body.classList.toggle('color-mode-dark');
+        });
+      }
+    });
+  </script>
 
   <!-- ABOUT -->
   <section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
@@ -695,6 +831,14 @@ https://www.tooplate.com/view/2115-marvel
 
     gtag('config', 'G-WG8E0KZR0F');
   </script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ua1cdwo60x");
+</script>
 
   <!-- Default Statcounter code for Afraym.com
     https://afraym.com/ -->
